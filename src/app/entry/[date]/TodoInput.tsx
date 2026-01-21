@@ -48,7 +48,8 @@ export function TodoInput({ date }: { date: string }) {
                     outline: 'none',
                     opacity: isSubmitting ? 0.5 : 1,
                     background: 'var(--bg-primary)',
-                    color: 'var(--text-primary)'
+                    color: 'var(--text-primary)',
+                    fontSize: '16px'
                 }}
                 onKeyDown={handleKeyDown}
             />

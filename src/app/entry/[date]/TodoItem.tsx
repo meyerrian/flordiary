@@ -61,7 +61,7 @@ export function TodoItem({ todo }: { todo: Todo }) {
             <span style={{
                 flex: 1,
                 textDecoration: todo.completed ? 'line-through' : 'none',
-                color: todo.completed ? '#cbd5e1' : 'inherit'
+                color: todo.completed ? '#cbd5e1' : '#1e293b'
             }}>
                 {todo.content}
             </span>

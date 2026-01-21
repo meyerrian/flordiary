@@ -153,7 +153,7 @@ export default async function Dashboard() {
           <ThemeToggle />
           <Link href="/settings" style={{ padding: '0.5rem' }}>
             <img
-              src={`https://api.dicebear.com/9.x/notionists-neutral/svg?seed=${profile.id}`}
+              src={`https://api.dicebear.com/9.x/${profile.avatar_style || 'notionists-neutral'}/svg?seed=${profile.id}`}
               alt="Avatar"
               style={{ width: '40px', height: '40px', borderRadius: '50%', background: '#eee' }}
             />

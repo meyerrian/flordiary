@@ -49,14 +49,14 @@ export default function LoginPage() {
                     fontSize: '1.875rem',
                     fontWeight: 700,
                     marginBottom: '0.5rem',
-                    color: 'var(--text-primary)',
+                    color: '#0f172a',
                     textAlign: 'center'
                 }}>
                     Flor Diary
                 </h1>
                 <p style={{
                     textAlign: 'center',
-                    color: 'var(--text-secondary)',
+                    color: '#475569',
                     marginBottom: '2rem'
                 }}>
                     {isSignUp ? 'Create your private diary' : 'Welcome back'}
@@ -68,7 +68,7 @@ export default function LoginPage() {
                             display: 'block',
                             fontSize: '0.875rem',
                             fontWeight: 500,
-                            color: 'var(--text-secondary)',
+                            color: '#475569',
                             marginBottom: '0.5rem'
                         }}>
                             Email
@@ -84,6 +84,7 @@ export default function LoginPage() {
                                 borderRadius: 'var(--radius-md)',
                                 border: '1px solid #cbd5e1',
                                 background: 'white',
+                                color: '#1e293b',
                                 fontSize: '1rem',
                                 outline: 'none',
                                 transition: 'border-color 0.2s',
@@ -96,7 +97,7 @@ export default function LoginPage() {
                             display: 'block',
                             fontSize: '0.875rem',
                             fontWeight: 500,
-                            color: 'var(--text-secondary)',
+                            color: '#475569',
                             marginBottom: '0.5rem'
                         }}>
                             Password
@@ -113,6 +114,7 @@ export default function LoginPage() {
                                 borderRadius: 'var(--radius-md)',
                                 border: '1px solid #cbd5e1',
                                 background: 'white',
+                                color: '#1e293b',
                                 fontSize: '1rem',
                                 outline: 'none'
                             }}
@@ -159,7 +161,7 @@ export default function LoginPage() {
                         style={{
                             background: 'none',
                             border: 'none',
-                            color: 'var(--text-secondary)',
+                            color: '#475569',
                             textDecoration: 'underline',
                             cursor: 'pointer',
                             fontSize: '0.875rem'

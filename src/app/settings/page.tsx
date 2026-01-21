@@ -42,6 +42,41 @@ export default async function SettingsPage() {
                             <div style={{ fontSize: '1rem' }}>{user.email}</div>
                         </div>
 
+                        {/* Avatar Style */}
+                        <div>
+                            <label htmlFor="avatarStyle" style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 600 }}>
+                                Avatar Style
+                            </label>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '0.5rem' }}>
+                                <img
+                                    src={`https://api.dicebear.com/9.x/${profile?.avatar_style || 'notionists-neutral'}/svg?seed=${profile?.id}`}
+                                    alt="Avatar Preview"
+                                    style={{ width: '60px', height: '60px', borderRadius: '50%', background: '#eee' }}
+                                />
+                                <select
+                                    name="avatarStyle"
+                                    id="avatarStyle"
+                                    defaultValue={profile?.avatar_style || 'notionists-neutral'}
+                                    style={{
+                                        flex: 1,
+                                        padding: '0.75rem',
+                                        borderRadius: 'var(--radius-md)',
+                                        border: '1px solid #e2e8f0',
+                                        fontSize: '16px'
+                                    }}
+                                >
+                                    <option value="notionists-neutral">Notionists (Default)</option>
+                                    <option value="avataaars">Avataaars</option>
+                                    <option value="bottts">Bottts (Robot)</option>
+                                    <option value="fun-emoji">Fun Emoji</option>
+                                    <option value="lorelei">Lorelei</option>
+                                    <option value="micah">Micah</option>
+                                    <option value="pixel-art">Pixel Art</option>
+                                    <option value="thumbs">Thumbs</option>
+                                </select>
+                            </div>
+                        </div>
+
                         {/* Timezone */}
                         <div>
                             <label htmlFor="timezone" style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 600 }}>
